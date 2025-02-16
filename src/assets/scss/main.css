@@ -113,17 +113,44 @@ a {
 
 .title {
   margin: 0;
-  margin-bottom: 20px;
-  font-size: 32px;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.375rem, 1.1176rem + 1.1765vw, 2rem);
+  font-family: var(--font-family);
+  color: var(--dark-color);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: clamp(1.375rem, 1.1176rem + 1.1765vw, 2rem);
   font-family: var(--font-family);
   color: var(--dark-color);
 }
 
 .text {
   margin: 0;
-  font-size: 20px;
+  font-size: clamp(0.875rem, 0.7721rem + 0.4706vw, 1.125rem);
   font-family: var(--font-family);
   color: var(--dark-color);
+}
+
+.btn {
+  padding: 0.3125rem;
+  font-size: clamp(0.875rem, 0.7721rem + 0.4706vw, 1.125rem);
+  font-family: var(--font-family);
+  color: var(--dark-color);
+}
+
+.logo {
+  width: 230px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 /*# sourceMappingURL=main.css.map */
